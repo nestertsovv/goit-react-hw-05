@@ -1,0 +1,14 @@
+.btn {
+  padding: 12px 24px;
+  margin: 0 auto 24px;
+  border: none;
+  background-color: aquamarine;
+  cursor: pointer;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgb(23, 255, 178);
+  }
+}

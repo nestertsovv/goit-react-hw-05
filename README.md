@@ -1,1 +1,1 @@
-# goit-react-hw-05
+# Searcher of movies for the soul

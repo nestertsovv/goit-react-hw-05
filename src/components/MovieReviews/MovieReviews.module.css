@@ -1,0 +1,27 @@
+.list {
+  padding: 0;
+  margin: 0 0 24px;
+  list-style: none;
+
+  .item {
+    &:not(:last-of-type) {
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid gray;
+    }
+
+    &:first-of-type {
+      padding-top: 24px;
+      border-top: 1px solid gray;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    p,
+    span {
+      line-height: 1.3;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.wrapper {
+  display: flex;
+
+  .imgWrapper {
+    max-width: 400px;
+  }
+
+  .details {
+    padding-left: 24px;
+
+    h1 {
+      font-size: 42px;
+      line-height: 1.1;
+      padding-bottom: 12px;
+      margin: 0 0 24px;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80%;
+        height: 4px;
+        background: linear-gradient(to right, aquamarine, aliceblue);
+      }
+    }
+
+    h2,
+    h3 {
+      font-size: 24px;
+      line-height: 1.1;
+      margin: 0 0 24px;
+    }
+
+    p {
+      margin: 0 0 24px;
+      line-height: 1.4;
+    }
+  }
+
+  .genreList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+
+    li {
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 12px;
+      font-size: 18px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 3px);
+        left: 0;
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: blue;
+      }
+    }
+  }
+}
+
+.goBack {
+  display: flex;
+  margin-bottom: 24px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    padding: 6px;
+    border: 1px solid gray;
+    color: rgb(43, 43, 43);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    svg {
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      border-color: #000;
+
+      svg {
+        transform: translateX(-2px);
+      }
+    }
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.low {
+  color: rgb(226, 62, 62);
+}
+
+.high {
+  color: rgb(34, 181, 34);
+}
+
+.additionalTitle {
+  text-align: center;
+}
+
+.additionalInfo {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+
+  .link {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: blue;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: azure;
+    transition: all 0.3s ease;
+
+    &:hover:not(.active) {
+      background-color: rgb(203, 224, 224);
+    }
+  }
+
+  .active {
+    background-color: aquamarine;
+  }
+}

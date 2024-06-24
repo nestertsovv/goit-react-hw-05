@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
+  position: relative;
+
+  input {
+    width: 400px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+  }
+
+  button {
+    padding: 12px 24px;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgb(23, 255, 178);
+    }
+  }
+
+  .row {
+    display: flex;
+    position: relative;
+
+    .error {
+      position: absolute;
+      top: 108%;
+      left: 0;
+      color: red;
+    }
+  }
+}
