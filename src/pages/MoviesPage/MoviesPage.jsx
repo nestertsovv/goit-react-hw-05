@@ -63,6 +63,7 @@ const MoviesPage = () => {
     setFilms([]);
     setError(false);
     setIsEmpty(false);
+    setShowLoadMore(false);
     setSearchParams({ query: value.text });
     actions.resetForm();
   };
